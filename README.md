@@ -5,7 +5,9 @@ How to run these benchmarks:
 1. Make the main scripts executable
 
 1.1 Do $chmod +x copy_scripts_in_dirs.sh
+
 1.2 Do $chmod +x submit_jobs.sh
+
 1.3 Do $chmod +x check_and_extract_logs.sh
 
 

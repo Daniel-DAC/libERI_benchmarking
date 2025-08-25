@@ -1,12 +1,15 @@
 How to run these benchmarks:
 
 0. Move the file named df2dt to the $GMSPATH/auxdata folder
+
    Set the EXTBAS path to this file in gms-files.csh and gms-files.bash
 
 1. Make the main scripts executable
 
 1.1 Do $chmod +x copy_scripts_in_dirs.sh
+
 1.2 Do $chmod +x submit_jobs.sh
+
 1.3 Do $chmod +x check_and_extract_logs.sh
 
 

@@ -1,22 +1,22 @@
-# Anything and everything you need to benchmark libERI
-
 How to run these benchmarks:
+
+0. Move the file named df2dt to the $GMSPATH/auxdata folder
+   Set the EXTBAS path to this file in gms-files.csh and gms-files.bash
 
 1. Make the main scripts executable
 
 1.1 Do $chmod +x copy_scripts_in_dirs.sh
-
 1.2 Do $chmod +x submit_jobs.sh
-
 1.3 Do $chmod +x check_and_extract_logs.sh
 
 
 2. Modify scripts to run properly
 
-2.1 MODIFY scripts/bash_script_multiple
+2.1 MODIFY scripts/bash_script_multiple as follows:
+    Modify the SBATCH parameters as appropriate (account name, cpus_per_task, etc.)
     Load whichever modules are required
     Set the appropriate number of threads 
-    In line 39, set the path to your rungms-dev script
+    In line 39, set the path to your rungms-dev script. The number of ranks is the number of GPUs to be used (if any)
 
 2.2 In your rungms-dev, hardcode the $GMSPATH instead of having it be `pwd`
 

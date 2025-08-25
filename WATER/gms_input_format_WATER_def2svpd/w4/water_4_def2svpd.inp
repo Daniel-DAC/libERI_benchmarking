@@ -1,0 +1,27 @@
+ $CONTRL SCFTYP=rhf RUNTYP=ENERGY MAXIT=1 $END 
+ $contrl ispher=1 $end
+ $contrl icharg=0 mult=1 $end
+ $CONTRL NPRINT=-5 $END
+ $SYSTEM mwords=5000 memddi=5000 $END
+ $BASIS
+ GBASIS=df2svpd !  Basis set name in the external file
+ BASNAM=def2dt ! External file name, same as extbas in gms-files.*
+ EXTFIL=.T. ! Tell gamess to look for an external file
+ $END
+ $SCF DIRSCF=.TRUE. $END
+ $DATA
+4 water molecules
+C1
+H     1.0    -0.36973101    -1.48540998    -0.16418099
+H     1.0    -0.82182997     0.06404400    -0.41244701
+O     8.0    -0.06197100    -0.58374298    -0.46815100
+H     1.0    -0.43284300     2.41419792    -0.26630101
+H     1.0     0.73922801     1.34009302    -0.63964099
+O     8.0     0.49999800     2.31071091    -0.61157399
+H     1.0     1.79642701     1.25401497     1.99371600
+H     1.0     2.09318089    -0.33756700     2.20735192
+O     8.0     2.40847111     0.49880701     1.75881100
+H     1.0    -2.13454103    -0.80912799     3.27104306
+H     1.0    -0.81696802    -1.73695302     3.53557801
+O     8.0    -1.14335299    -0.80089903     3.40368891
+ $END

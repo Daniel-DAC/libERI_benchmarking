@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Loop over all directories in the current directory
+for dir in */; do
+    echo "Entering directory: $dir"
+    cd "$dir" || continue  # Enter the directory, skip if it fails
+    rm -v *.log 2>/dev/null  # Remove .log files, suppress error if none
+    cd ..
+done
+
+echo "All .log files deleted from subdirectories."

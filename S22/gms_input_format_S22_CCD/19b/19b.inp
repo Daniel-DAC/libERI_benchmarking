@@ -1,0 +1,15 @@
+!   File created by MacMolPlt 7.7.3
+ $CONTRL SCFTYP=rhf RUNTYP=ENERGY MAXIT=1 $END
+ $contrl ispher=1 $end
+ $contrl icharg=0 mult=1 $end
+ $CONTRL NPRINT=-5 $END
+ $SYSTEM mwords=5000 memddi=5000 $END
+ $BASIS GBASIS=CCD $END
+ $SCF DIRSCF=.TRUE. $END
+ $DATA
+19b
+C1
+N 7.0 0.000000 0.000000 1.134185
+C 6.0 0.000000 0.000000 -0.033153
+H 1.0 0.000000 0.000000 -1.101032
+ $END

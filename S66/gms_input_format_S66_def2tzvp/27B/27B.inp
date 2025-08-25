@@ -1,0 +1,27 @@
+!   File created by MacMolPlt 7.7.3
+ $CONTRL SCFTYP=rhf RUNTYP=ENERGY MAXIT=1 $END
+ $contrl ispher=1 $end
+ $contrl icharg=0 mult=1 $end
+ $CONTRL NPRINT=-5 $END
+ $SYSTEM mwords=5000 memddi=5000 $END
+ $BASIS
+ GBASIS=df2tzvp !  Basis set name in the external file
+ BASNAM=def2dt ! External file name, same as extbas in gms-files.*
+ EXTFIL=.T. ! Tell gamess to look for an external file
+ $END
+ $SCF DIRSCF=.TRUE. $END
+ $DATA
+27B
+C1
+N 7.0 -1.607071 -0.104911 -0.087894
+C 6.0 -0.992186 1.052757 0.192170
+H 1.0 -1.639790 1.905928 0.354682
+C 6.0 0.390029 1.193605 0.282341
+H 1.0 0.821878 2.157255 0.513557
+C 6.0 1.190981 0.076625 0.068127
+H 1.0 2.268550 0.147010 0.122962
+C 6.0 0.570429 -1.132030 -0.225532
+H 1.0 1.146203 -2.027651 -0.409607
+C 6.0 -0.820085 -1.170067 -0.290982
+H 1.0 -1.328938 -2.098521 -0.519824
+ $END

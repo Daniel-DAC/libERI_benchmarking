@@ -24,7 +24,7 @@ How to run these benchmarks:
 2.2 In your rungms-dev, hardcode the $GMSPATH instead of having it be `pwd`
 
 2.3 MODIFY scripts/extract_gamess_data.py
-    In line 60, change the file name to show the system where you are benchmarking
+    In line 97, change the file name to show the system where you are benchmarking
 
 
 3. Execute the main scripts

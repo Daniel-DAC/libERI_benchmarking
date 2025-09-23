@@ -19,7 +19,7 @@ How to run these benchmarks:
     Modify the SBATCH parameters as appropriate (account name, cpus_per_task, etc.)
     Load whichever modules are required
     Set the appropriate number of threads 
-    In line 39, set the path to your rungms-dev script. The number of ranks is the number of GPUs to be used (if any)
+    In line 42, set the path to your rungms-dev script. The number of ranks is the number of GPUs to be used (if any)
 
 2.2 In your rungms-dev, hardcode the $GMSPATH instead of having it be `pwd`
 

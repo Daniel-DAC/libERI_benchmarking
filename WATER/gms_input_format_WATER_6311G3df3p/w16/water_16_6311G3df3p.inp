@@ -1,4 +1,4 @@
- $CONTRL SCFTYP=rhf RUNTYP=ENERGY MAXIT=1 $END
+ $CONTRL SCFTYP=rhf RUNTYP=ENERGY MAXIT=10 $END
  $contrl ispher=1 $end
  $contrl icharg=0 mult=1 $end
  $CONTRL NPRINT=-5 $END

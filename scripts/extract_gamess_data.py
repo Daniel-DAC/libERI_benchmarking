@@ -13,7 +13,7 @@ energy_pattern = re.compile(r"FINAL RHF ENERGY IS\s+([-.\d]+).*?(\d+)\s+ITERATIO
 # Timings for specific stages of the calculation
 fock_pattern = re.compile(r"Fock build time\s+([.\d]+)")
 diag_pattern = re.compile(r"Diagonalization\s+([.\d]+)")
-total_iter_pattern = re.compile(r"Total iter time\s+([.\d]+)")
+total_iter_pattern = re.compile(r"Averg iter time\s+([.\d]+)")
 
 # Number of Cartesian Gaussian basis functions
 basis_func_pattern = re.compile(r"NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS\s*=\s*(\d+)")
